@@ -1,4 +1,7 @@
 class CoinsController < ApplicationController
+  #SEM ESPECIFICAR, O PADRÃO PARA LAYOUT É O APPLICATION, MAS MUDANDO:
+  layout "testlayout"
+
   before_action :set_coin, only: [:show, :edit, :update, :destroy]
 
   # GET /coins
